@@ -147,3 +147,42 @@ body {
 }
 
 
+.clock {
+    color: white;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock .number {
+    position: absolute;
+    left: 10px;
+    transform-origin: 90px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--j));
+    transform: rotate(120deg) translateX(80px);
+}
+
+.clock.active .number {
+    transform: rotate(calc(30deg * var(--j) + 120deg));
+}
+
+.clock .number span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(calc(-30deg * var(--j) - 120deg));
+}
+
+.clock .point {
+    width: 24px;
+    height: 24px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 50%;
+}

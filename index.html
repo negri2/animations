@@ -48,7 +48,7 @@
             </li>
             <li style="--i:5;">
                 <a href="#">
-                    <ion-icon name="key-outline"></ion-icon>
+                    <ion-icon name="videocam-outline"></ion-icon>
                 </a>
             </li>
             <li style="--i:6;">
@@ -58,10 +58,27 @@
             </li>
             <li style="--i:7;">
                 <a href="#">
-                    <ion-icon name="game-controller-outline"></ion-icon>
+                    <ion-icon name="camera-outline"></ion-icon>
                 </a>
             </li>
         </div>
+    </div>
+
+    <div class="clock">
+        <div class="point"></div>
+
+        <div class="number" style="--j:0;"><span>1</span></div>
+        <div class="number" style="--j:1;"><span>2</span></div>
+        <div class="number" style="--j:2;"><span>3</span></div>
+        <div class="number" style="--j:3;"><span>4</span></div>
+        <div class="number" style="--j:4;"><span>5</span></div>
+        <div class="number" style="--j:5;"><span>6</span></div>
+        <div class="number" style="--j:6;"><span>7</span></div>
+        <div class="number" style="--j:7;"><span>8</span></div>
+        <div class="number" style="--j:8;"><span>9</span></div>
+        <div class="number" style="--j:9;"><span>10</span></div>
+        <div class="number" style="--j:10;"><span>11</span></div>
+        <div class="number" style="--j:11;"><span>12</span></div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -72,9 +89,17 @@
         let toggle = document.querySelector('.toggle');
         let menu = document.querySelector('.menu');
 
-        toggle.onclick = function(){
+        toggle.onclick = function () {
             menu.classList.toggle('active');
         }
+
+        let clock = document.querySelector('.clock');
+
+        clock.onclick = function () {
+            clock.classList.toggle('active');
+        }
+
+
     </script>
 </body>
 
